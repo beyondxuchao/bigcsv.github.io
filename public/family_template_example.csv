@@ -1,0 +1,27 @@
+Employee Information Form
+
+Name: {{name}}
+Position: {{position}}
+Department: {{department}}
+Salary: {{salary}}
+Address: {{address}}
+
+Primary Record Details:
+{{primary_record}}
+
+Grouping Information:
+Field: {{grouping_field}}
+Value: {{grouping_value}}
+Total Members: {{memberCount}}
+
+Team Members:
+1. {{related1_name}} - {{related1_position}}
+2. {{related2_name}} - {{related2_position}}
+3. {{related3_name}} - {{related3_position}}
+4. {{related4_name}} - {{related4_position}}
+5. {{related5_name}} - {{related5_position}}
+6. {{member1_name}} - {{member1_department}}
+7. {{member2_name}} - {{member2_salary}}
+
+Generated on: [Date]
+Report ID: [Auto-Generated]

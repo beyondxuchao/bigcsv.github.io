@@ -1,0 +1,9 @@
+name,position,department,salary,address
+John Smith,Manager,Sales,75000,123 Main St
+Jane Smith,Assistant,Sales,45000,123 Main St
+Bob Smith,Intern,Sales,25000,123 Main St
+Alice Johnson,Director,Marketing,85000,456 Oak Ave
+Charlie Johnson,Analyst,Marketing,55000,456 Oak Ave
+David Brown,Engineer,IT,70000,789 Pine Rd
+Eva Brown,Designer,IT,65000,789 Pine Rd
+Frank Brown,Developer,IT,72000,789 Pine Rd

@@ -1,0 +1,8 @@
+Name,Email,Email,,Age,Notes,,
+ Alice , alice@example.com , alice.work@example.com , , 28 , Active user ,,
+,bob@example.com,bob.alt@example.com,,34,Missing name field,,
+ , , , , , , ,
+Charlie,charlie@example.com,charlie.alt@example.com,,31
+Dana,dana@example.com,dana.alt@example.com,,29,Has extra field,,,unexpected
+Eve,eve@example.com,eve.alt@example.com,, ,Needs age cleanup,,
+Frank,frank@example.com,frank.alt@example.com,,42,"Quoted note, with comma",,
