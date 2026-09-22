@@ -1,8 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { Download, FileTextIcon } from 'lucide-react';
+import { FileTextIcon } from 'lucide-react';
 import { MenuDropdown } from './MenuDropdown';
-import { Button } from '@/components/ui/button';
 
 interface HeaderProps {
   className?: string;
@@ -19,19 +18,7 @@ export function Header({ className = '' }: HeaderProps) {
               CSVFilters
             </h1>
           </Link>
-          <div className="flex flex-wrap items-center gap-2">
-            <Button asChild size="sm" className="bg-emerald-600 text-white hover:bg-emerald-700">
-              <a
-                href="https://github.com/beyondxuchao/csvfilters/releases/latest"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Download className="h-4 w-4" />
-                <span>Download App</span>
-              </a>
-            </Button>
-            <MenuDropdown />
-          </div>
+          <MenuDropdown />
         </div>
       </div>
     </header>
