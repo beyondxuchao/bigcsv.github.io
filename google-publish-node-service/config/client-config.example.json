@@ -1,0 +1,35 @@
+{
+  "analyticsEnabled": true,
+  "ads": {
+    "home": {
+      "enabled": true,
+      "updatedAt": "",
+      "imageMode": "small",
+      "label": "Sponsored",
+      "title": "Your sponsor title",
+      "description": "This text is loaded from your remote server config.",
+      "ctaText": "查看更多",
+      "code": "",
+      "imageUrl": "/static/ad-image.png",
+      "targetUrl": "https://example.com",
+      "backgroundColor": "#f0fdf4",
+      "accentColor": "#16a34a"
+    }
+  },
+  "notice": {
+    "enabled": true,
+    "level": "info",
+    "title": "CSVFilters Notice",
+    "message": "This notice is loaded from your remote server config.",
+    "linkText": "View details",
+    "linkUrl": "https://csvfilters.com"
+  },
+  "update": {
+    "enabled": true,
+    "latestVersion": "0.2.0",
+    "title": "CSVFilters 0.2.0 is available",
+    "releaseNotes": "Add your release notes here.",
+    "downloadUrl": "https://csvfilters.com/download",
+    "force": false
+  }
+}

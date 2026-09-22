@@ -161,6 +161,62 @@ const tutorials: Tutorial[] = [
     category: 'Data Conversion',
     slug: 'xml-to-csv-guide',
   },
+
+  {
+    id: '13',
+    title: 'How to Open a Large CSV File Without Excel Crashing',
+    description:
+      'Learn what to do when Excel freezes, crashes, or cannot open a large CSV file, and how to preview and filter large datasets safely.',
+    readTime: '7 min read',
+    author: 'CSVFilters Team',
+    publishDate: '2026-06-20',
+    category: 'Large CSV Guide',
+    slug: 'open-large-csv-without-excel',
+  },
+  {
+    id: '14',
+    title: 'CSV to Excel Conversion Guide',
+    description:
+      'Convert CSV to XLSX safely while avoiding broken dates, lost leading zeros, scientific notation, and encoding problems.',
+    readTime: '8 min read',
+    author: 'CSVFilters Team',
+    publishDate: '2026-06-20',
+    category: 'Data Conversion',
+    slug: 'csv-to-excel-conversion-guide',
+  },
+  {
+    id: '15',
+    title: 'How to Combine Multiple CSV Files Into One',
+    description:
+      'Learn how to combine multiple CSV files, validate headers, avoid duplicate header rows, and keep merged data clean.',
+    readTime: '7 min read',
+    author: 'CSVFilters Team',
+    publishDate: '2026-06-20',
+    category: 'Workflow Guide',
+    slug: 'combine-multiple-csv-files',
+  },
+  {
+    id: '16',
+    title: 'CSV File Repair Guide',
+    description:
+      'Validate and fix broken CSV files with malformed rows, broken quotes, delimiter issues, and encoding problems.',
+    readTime: '8 min read',
+    author: 'CSVFilters Team',
+    publishDate: '2026-06-20',
+    category: 'Data Quality Guide',
+    slug: 'csv-file-repair-and-validation',
+  },
+  {
+    id: '17',
+    title: 'CSV to JSON Guide for API and Web App Workflows',
+    description:
+      'Convert CSV to JSON for APIs, imports, automation, and web apps while choosing the right JSON output shape.',
+    readTime: '7 min read',
+    author: 'CSVFilters Team',
+    publishDate: '2026-06-20',
+    category: 'Developer Guide',
+    slug: 'csv-to-json-api-guide',
+  },
 ];
 
 const categories = [
@@ -171,6 +227,10 @@ const categories = [
   'Data Conversion',
   'Tool Guide',
   'File Format Guide',
+  'Large CSV Guide',
+  'Workflow Guide',
+  'Data Quality Guide',
+  'Developer Guide',
 ];
 
 export default function TutorialsPage() {
