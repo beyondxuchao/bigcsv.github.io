@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import SeoTutorialArticle from '@/components/SeoTutorialArticle'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/csv-file-repair-and-validation/' },
   title: 'CSV File Repair Guide - Validate and Fix Broken CSV Files',
   description: 'Learn how to validate and repair CSV files with broken quotes, inconsistent columns, bad rows, encoding problems, and delimiter issues before importing data.',
   keywords: 'CSV repair, CSV validator, fix CSV file, malformed CSV, CSV validation, CSV encoding issue, broken CSV, invalid CSV rows',
@@ -18,15 +19,6 @@ const article = {
   "readTime": "8 min read",
   "publishDate": "2026-06-20",
   "intro": "A broken CSV file can fail during import, split columns incorrectly, or silently produce wrong results. This guide explains how to identify malformed CSV rows, encoding problems, delimiter issues, and inconsistent columns before they damage your workflow.",
-  "primaryKeyword": "CSV repair",
-  "secondaryKeywords": [
-    "CSV validator",
-    "fix CSV file",
-    "malformed CSV",
-    "CSV validation",
-    "CSV encoding issue"
-  ],
-  "searchIntent": "Users have a CSV file that fails to import or displays incorrectly and need a practical repair workflow.",
   "sections": [
     {
       "title": "Common signs of a broken CSV file",
@@ -73,10 +65,12 @@ const article = {
       "tone": "green"
     },
     {
-      "title": "Keyword takeaway",
+      "title": "Repair a quoted comma without losing a column",
       "body": [
-        "This topic targets problem-solving searches such as CSV repair, CSV validator, fix CSV file, malformed CSV, CSV validation, and CSV encoding issue. The article should include concrete symptoms and repair steps so searchers recognize their own problem quickly."
-      ]
+        "A comma inside a field must be enclosed in double quotes. In the broken row below, a parser sees three fields under a two-column header.",
+        "After repairing the source, run validation again and check both column counts and values. Structural validation cannot determine whether a customer name or amount is factually correct."
+      ],
+      "example": "Broken:\nname,city\nAda,Washington, DC\n\nRepaired:\nname,city\nAda,\"Washington, DC\""
     }
   ],
   "faqs": [

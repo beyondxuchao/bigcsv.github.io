@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import SeoTutorialArticle from '@/components/SeoTutorialArticle'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/csv-to-json-api-guide/' },
   title: 'CSV to JSON Guide for API and Web App Workflows',
   description: 'Learn how to convert CSV to JSON for APIs, web apps, imports, and automation. Compare array JSON, nested JSON, JSON Lines, and data cleanup steps.',
   keywords: 'CSV to JSON, convert CSV to JSON, CSV to JSON converter, JSON Lines, NDJSON, API data import, CSV JSON conversion',
@@ -18,15 +19,6 @@ const article = {
   "readTime": "7 min read",
   "publishDate": "2026-06-20",
   "intro": "CSV is great for spreadsheets and exports, while JSON is the default format for APIs and web applications. This guide explains how to convert CSV to JSON cleanly and choose the right JSON shape for your workflow.",
-  "primaryKeyword": "CSV to JSON",
-  "secondaryKeywords": [
-    "convert CSV to JSON",
-    "CSV to JSON converter",
-    "JSON Lines",
-    "NDJSON",
-    "API data import"
-  ],
-  "searchIntent": "Users want to turn tabular CSV data into JSON for APIs, apps, automation, or developer workflows.",
   "sections": [
     {
       "title": "CSV and JSON solve different problems",
@@ -69,10 +61,12 @@ const article = {
       "tone": "yellow"
     },
     {
-      "title": "Keyword takeaway",
+      "title": "Check identifiers before sending JSON to an API",
       "body": [
-        "This article targets CSV to JSON, convert CSV to JSON, CSV to JSON converter, JSON Lines, NDJSON, and API data import. It is a strong SEO topic because it combines format conversion with developer intent."
-      ]
+        "For this example, customer IDs must stay as strings so leading zeros survive. Compare your converted result with the expected structure below before importing it.",
+        "CSVFilters exports an array of records. NDJSON and nested objects require a separate transformation; do not assume that changing a filename changes the JSON structure."
+      ],
+      "example": "Input CSV:\ncustomer_id,name\n00123,Ada\n00456,Lin\n\nExpected JSON when identifiers stay strings:\n[\n  {\"customer_id\": \"00123\", \"name\": \"Ada\"},\n  {\"customer_id\": \"00456\", \"name\": \"Lin\"}\n]"
     }
   ],
   "faqs": [

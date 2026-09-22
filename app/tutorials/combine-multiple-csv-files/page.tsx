@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import SeoTutorialArticle from '@/components/SeoTutorialArticle'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/combine-multiple-csv-files/' },
   title: 'How to Combine Multiple CSV Files Into One',
   description: 'Learn how to combine multiple CSV files into one clean dataset. Compare append, merge, column matching, header handling, and source filename tracking.',
   keywords: 'combine CSV files, merge CSV files, append CSV files, combine multiple CSV files, CSV merger, merge CSV online, CSV file consolidation',
@@ -18,15 +19,6 @@ const article = {
   "readTime": "7 min read",
   "publishDate": "2026-06-20",
   "intro": "Combining CSV files is one of the most common data cleanup tasks. This guide explains how to merge multiple CSV files safely, avoid duplicate headers, handle mismatched columns, and keep track of where each row came from.",
-  "primaryKeyword": "combine CSV files",
-  "secondaryKeywords": [
-    "merge CSV files",
-    "append CSV files",
-    "combine multiple CSV files",
-    "CSV merger",
-    "CSV file consolidation"
-  ],
-  "searchIntent": "Users have many CSV exports and want one combined file without corrupting headers or columns.",
   "sections": [
     {
       "title": "Append vs merge: what most users really need",
@@ -70,10 +62,12 @@ const article = {
       "tone": "green"
     },
     {
-      "title": "Keyword takeaway",
+      "title": "Verify a merge with a small example",
       "body": [
-        "The search cluster includes combine CSV files, merge CSV files, append CSV files, combine multiple CSV files, and CSV merger. These keywords should appear in the H1, intro, H2 sections, FAQ, and tool link anchor text."
-      ]
+        "Start with two files with matching headers. Merge them, then check that the header appears once and the output contains all three data rows.",
+        "Combining files does not necessarily remove duplicates. If the same record occurs in both inputs, decide whether to keep both before using the merged data."
+      ],
+      "example": "File A:\nid,name\n1,Ada\n2,Lin\n\nFile B:\nid,name\n3,Sam\n\nExpected merged CSV:\nid,name\n1,Ada\n2,Lin\n3,Sam"
     }
   ],
   "faqs": [

@@ -7,6 +7,7 @@ const CsvValidator = dynamic(() => import('@/components/CsvValidator'), {
 });
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tools/csv-validator/' },
   title: 'CSV Validator | Check CSV Headers, Rows, and Column Consistency',
   description:
     'Free online CSV validator to detect duplicate headers, blank columns, inconsistent row lengths, empty rows, and other structural CSV issues before import or conversion.',

@@ -3,6 +3,7 @@ import { Clock, User } from 'lucide-react'
 import TutorialHeader from '@/components/TutorialHeader'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/what-is-csv-format/' },
   title: 'What is CSV Format? Complete Guide to Comma-Separated Values Files - CSVFilters',
   description: 'Learn everything about CSV (Comma-Separated Values) format: definition, structure, features, use cases, and best practices for creating, editing, and using CSV files.',
   keywords: 'CSV format, comma-separated values, CSV file, data import, data export, spreadsheet, tabular data',

@@ -4,6 +4,7 @@ import { Clock, User, RefreshCw, Download, Upload, Zap } from 'lucide-react'
 import TutorialHeader from '@/components/TutorialHeader'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/tsv-to-csv-converter/' },
   title: 'Free Online TSV to CSV Converter - Convert Tab-Separated to Comma-Separated Files',
   description: 'Convert TSV files to CSV format instantly with our free online converter. No software installation required. Secure, fast, and easy-to-use TSV to CSV conversion tool.',
   keywords: 'TSV to CSV converter, convert TSV to CSV, online file converter, tab-separated to comma-separated, free converter tool',

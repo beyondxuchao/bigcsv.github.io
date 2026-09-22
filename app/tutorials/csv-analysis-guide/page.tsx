@@ -4,6 +4,7 @@ import { Clock, User, BarChart3, TrendingUp, PieChart, Calculator } from 'lucide
 import TutorialHeader from '@/components/TutorialHeader'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/csv-analysis-guide/' },
   title: 'CSV Data Analysis Beginner\'s Guide - CSVFilters Data Analysis Tutorial',
   description: 'Learn CSV data analysis from scratch, including data cleaning, statistical analysis, trend identification, and visualization basics. Complete guide for beginners and business analysts.',
   keywords: 'CSV data analysis, data statistics, data cleaning, trend analysis, CSV visualization, data mining, business analysis',

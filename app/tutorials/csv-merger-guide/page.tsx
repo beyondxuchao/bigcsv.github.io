@@ -4,6 +4,7 @@ import { Clock, User, Merge, FileText, AlertTriangle, CheckCircle } from 'lucide
 import TutorialHeader from '@/components/TutorialHeader'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/csv-merger-guide/' },
   title: 'CSV Merger Complete Guide - Combine Multiple CSV Files Efficiently',
   description: 'Learn how to merge multiple CSV files with identical structures. Master template validation, header preservation, and efficient data combination techniques.',
   keywords: 'CSV merger, merge CSV files, combine CSV data, data consolidation, file merging, CSV tools',

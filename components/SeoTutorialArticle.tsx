@@ -1,11 +1,12 @@
 import Link from 'next/link'
-import { Clock, User, ArrowRight, CheckCircle, AlertTriangle, Lightbulb, Search } from 'lucide-react'
+import { Clock, User, ArrowRight, CheckCircle, AlertTriangle, Lightbulb } from 'lucide-react'
 import TutorialHeader from '@/components/TutorialHeader'
 
 export interface SeoArticleSection {
   title: string
   body: string[]
   bullets?: string[]
+  example?: string
   tone?: string
 }
 
@@ -20,9 +21,6 @@ interface SeoTutorialArticleProps {
   readTime: string
   publishDate: string
   intro: string
-  primaryKeyword: string
-  secondaryKeywords: string[]
-  searchIntent: string
   sections: SeoArticleSection[]
   faqs: SeoArticleFaq[]
   cta: {
@@ -52,9 +50,6 @@ export default function SeoTutorialArticle({
   readTime,
   publishDate,
   intro,
-  primaryKeyword,
-  secondaryKeywords,
-  searchIntent,
   sections,
   faqs,
   cta,
@@ -78,10 +73,7 @@ export default function SeoTutorialArticle({
               <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
                 {category}
               </span>
-              <span className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
-                SEO guide
-              </span>
-            </div>
+</div>
 
             <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600 mb-6">
               <div className="flex items-center gap-1">
@@ -97,27 +89,6 @@ export default function SeoTutorialArticle({
 
             <p className="text-xl text-gray-700 leading-relaxed mb-6">{intro}</p>
 
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="border border-blue-200 bg-blue-50 rounded-lg p-4">
-                <div className="flex items-center gap-2 text-blue-900 font-semibold mb-2">
-                  <Search className="w-4 h-4" />
-                  Main keyword
-                </div>
-                <p className="text-blue-800">{primaryKeyword}</p>
-              </div>
-              <div className="border border-gray-200 bg-gray-50 rounded-lg p-4">
-                <div className="text-gray-900 font-semibold mb-2">Search intent</div>
-                <p className="text-gray-700">{searchIntent}</p>
-              </div>
-            </div>
-
-            <div className="mt-4 flex flex-wrap gap-2">
-              {secondaryKeywords.map((keyword) => (
-                <span key={keyword} className="px-3 py-1 bg-white border border-gray-200 text-gray-700 text-sm rounded-full">
-                  {keyword}
-                </span>
-              ))}
-            </div>
           </header>
 
           <div className="bg-white rounded-xl shadow-lg p-8">
@@ -130,6 +101,7 @@ export default function SeoTutorialArticle({
                     {section.body.map((paragraph) => (
                       <p key={paragraph} className="text-gray-700 mb-4">{paragraph}</p>
                     ))}
+                    {section.example ? <pre className="overflow-x-auto rounded-lg bg-slate-900 p-4 text-sm text-slate-100 mb-4"><code>{section.example}</code></pre> : null}
                     {section.bullets ? (
                       <div className={`border rounded-lg p-5 ${toneClasses[tone]}`}>
                         <div className="flex items-start gap-3">

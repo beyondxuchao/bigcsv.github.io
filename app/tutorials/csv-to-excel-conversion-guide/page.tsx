@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import SeoTutorialArticle from '@/components/SeoTutorialArticle'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/csv-to-excel-conversion-guide/' },
   title: 'CSV to Excel Conversion Guide - Convert CSV to XLSX Safely',
   description: 'Convert CSV to Excel without losing leading zeros, breaking dates, or corrupting characters. Learn when to use XLSX and how to avoid common CSV import issues.',
   keywords: 'CSV to Excel, convert CSV to XLSX, CSV to XLSX converter, CSV opens incorrectly in Excel, Excel CSV import, CSV leading zeros, CSV date format',
@@ -18,15 +19,6 @@ const article = {
   "readTime": "8 min read",
   "publishDate": "2026-06-20",
   "intro": "CSV to Excel conversion sounds simple, but real-world files often contain leading zeros, dates, long numbers, commas, quotes, and non-English text. This guide explains how to convert CSV to XLSX while protecting data integrity.",
-  "primaryKeyword": "CSV to Excel",
-  "secondaryKeywords": [
-    "convert CSV to XLSX",
-    "CSV to XLSX converter",
-    "CSV opens incorrectly in Excel",
-    "CSV leading zeros",
-    "Excel CSV import"
-  ],
-  "searchIntent": "Users want to convert CSV into an Excel-friendly format without breaking values or formatting.",
   "sections": [
     {
       "title": "Why CSV files look wrong in Excel",
@@ -70,10 +62,12 @@ const article = {
       "tone": "blue"
     },
     {
-      "title": "Keyword takeaway",
+      "title": "Check IDs and worksheet limits before export",
       "body": [
-        "This article targets commercial and practical queries such as CSV to Excel, convert CSV to XLSX, CSV to XLSX converter, and CSV opens incorrectly in Excel. The content should repeat these phrases naturally in the title, introduction, problem sections, and tool call-to-action."
-      ]
+        "Use a small sample first and compare the resulting cells with the source text. Customer IDs and postal codes may need text formatting to preserve leading zeros.",
+        "An Excel worksheet has 1,048,576 rows, including the header. Filter or split a larger dataset before exporting to a worksheet. Browser memory can become a limit well before that row count."
+      ],
+      "example": "Input CSV:\ncustomer_id,postal_code\n00123,02108\n\nCheck in the workbook:\ncustomer_id remains 00123 (not 123)\npostal_code remains 02108 (not 2108)\nTwo columns and one data row"
     }
   ],
   "faqs": [

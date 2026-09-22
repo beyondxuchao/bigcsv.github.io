@@ -10,6 +10,7 @@ const FormatConverter = dynamic(
 );
 
 export const metadata = {
+  alternates: { canonical: '/tools/format-converter/json-to-csv/' },
   title: 'JSON to CSV Converter | Free Online JSON CSV Conversion Tool',
   description: 'Convert JSON files to CSV format instantly with our free online JSON to CSV converter. Support for nested JSON objects, arrays, and complex data structures. Fast, secure, and browser-based processing.',
   keywords: 'json to csv converter, json to csv, convert json to csv, json csv conversion, json parser, csv generator, online json converter',

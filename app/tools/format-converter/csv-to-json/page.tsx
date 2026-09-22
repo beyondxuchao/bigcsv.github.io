@@ -3,6 +3,7 @@ import { FormatConverter } from '@/components/FormatConverter';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/tools/format-converter/csv-to-json/' },
   title: 'CSV to JSON Converter | Free Online CSV JSON Conversion Tool',
   description: 'Convert CSV files to JSON format instantly with our free online CSV to JSON converter. Support for custom delimiters, headers, and data validation. Fast, secure, and browser-based processing.',
   keywords: 'csv to json converter, csv to json, convert csv to json, csv json conversion, csv parser, json generator, online csv converter',

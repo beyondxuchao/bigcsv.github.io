@@ -2,6 +2,7 @@ import React from 'react';
 import { EncodingConverter } from '@/app/components/EncodingConverter';
 
 export const metadata = {
+  alternates: { canonical: '/tools/encoding-converter/gbk-to-utf8/' },
   title: 'GBK to UTF-8 Converter | Convert GBK Files to UTF-8 Encoding Online Free',
   description: 'Free online GBK to UTF-8 encoding converter. Convert GBK (Chinese Simplified) encoded files to UTF-8 encoding with automatic detection and secure browser-based processing.',
   keywords: 'gbk to utf-8 converter, gbk utf8 converter, chinese encoding converter, gbk utf-8 conversion, file encoding converter, charset converter',

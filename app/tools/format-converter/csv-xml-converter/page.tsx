@@ -102,11 +102,12 @@ export default function CsvXmlConverterPage() {
         </section>
 
         <section>
-          <h3 className="text-xl font-semibold text-gray-900 mb-3">SEO and Content Notes</h3>
+          <h3 className="text-xl font-semibold text-gray-900 mb-3">Check the converted result</h3>
           <p className="text-gray-600 leading-7">
-            This page acts as the primary destination for both &quot;CSV to XML&quot; and &quot;XML to CSV&quot; intents. The older
-            dedicated URLs remain lightweight redirect pages so search engines and users land on the single
-            canonical converter instead of split duplicate content.
+            Try a small sample first. When converting XML, select the repeating record node and compare
+            the resulting row count with your source. Nested elements and attributes can become columns;
+            review their names before importing the CSV into another system. Keep a copy of the original
+            because a flat CSV cannot preserve every feature of a hierarchical XML document.
           </p>
         </section>
       </div>

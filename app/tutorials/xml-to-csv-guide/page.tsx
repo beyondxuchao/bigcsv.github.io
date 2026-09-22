@@ -4,6 +4,7 @@ import { Clock, User, ArrowRight, CheckCircle, FileText } from 'lucide-react';
 import TutorialHeader from '@/components/TutorialHeader';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/xml-to-csv-guide/' },
   title: 'How to Convert XML to CSV - XML to CSV Guide | CSVFilters',
   description:
     'Learn how to convert XML to CSV, how XML record nodes map to rows, how nested fields flatten into columns, and how to avoid common XML parsing issues.',

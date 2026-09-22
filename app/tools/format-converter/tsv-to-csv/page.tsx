@@ -3,6 +3,7 @@ import { FormatConverter } from '@/components/FormatConverter';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/tools/format-converter/tsv-to-csv/' },
   title: 'TSV to CSV Converter | Free Online TSV CSV Conversion Tool',
   description: 'Convert TSV (Tab-Separated Values) files to CSV format instantly with our free online TSV to CSV converter. Support for custom delimiters and data validation. Fast, secure, and browser-based processing.',
   keywords: 'tsv to csv converter, tsv to csv, convert tsv to csv, tab separated values, csv conversion, tsv parser, online tsv converter',

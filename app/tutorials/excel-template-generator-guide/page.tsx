@@ -5,6 +5,7 @@ import { Clock, User, FileSpreadsheet, Users, Target, AlertTriangle, CheckCircle
 import TutorialHeader from '@/components/TutorialHeader'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/excel-template-generator-guide/' },
   title: 'Excel Template Generator Complete Guide - Automated Document Creation',
   description: 'Master the Excel Template Generator tool. Learn how to create personalized documents from templates, handle group data, and automate file generation for business workflows.',
   keywords: 'Excel template generator, automated document creation, template variables, group data processing, business automation, personalized documents, Excel automation',

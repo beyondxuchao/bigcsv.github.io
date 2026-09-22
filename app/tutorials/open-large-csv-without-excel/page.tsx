@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import SeoTutorialArticle from '@/components/SeoTutorialArticle'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/open-large-csv-without-excel/' },
   title: 'How to Open a Large CSV File Without Excel Crashing',
   description: 'Learn how to open large CSV files when Excel freezes, crashes, or reaches row limits. Compare practical options and use CSVFilters for large CSV viewing and filtering.',
   keywords: 'open large CSV file, large CSV viewer, Excel cannot open CSV, CSV file too large, view large CSV, large CSV file viewer, CSVFilters',
@@ -18,15 +19,6 @@ const article = {
   "readTime": "7 min read",
   "publishDate": "2026-06-20",
   "intro": "If Excel freezes, crashes, or refuses to load your CSV file, the problem is usually file size, row limits, memory usage, or inconsistent CSV formatting. This guide explains practical ways to open and inspect large CSV files safely.",
-  "primaryKeyword": "open large CSV file",
-  "secondaryKeywords": [
-    "large CSV viewer",
-    "Excel cannot open CSV",
-    "CSV file too large",
-    "view large CSV",
-    "CSV file viewer"
-  ],
-  "searchIntent": "Users want a fast way to open a CSV file that is too large for Excel or spreadsheet software.",
   "sections": [
     {
       "title": "Why Excel struggles with large CSV files",
@@ -69,10 +61,12 @@ const article = {
       "tone": "blue"
     },
     {
-      "title": "Keyword takeaway",
+      "title": "Measure a small sample before opening the full file",
       "body": [
-        "The high-intent searches behind this workflow are usually problem-based: open large CSV file, large CSV viewer, Excel cannot open CSV, and CSV file too large. A page targeting this topic should answer the pain point quickly and then introduce the tool as the practical solution."
-      ]
+        "Browser tools still use device memory. Pagination limits what is rendered on screen, but does not guarantee that only those rows are loaded into memory.",
+        "Start with a small, non-sensitive sample. Check headers and encoding, then try the full file only if your device has enough memory. If the tab becomes unresponsive, use an offline streaming tool or split the source before loading it."
+      ],
+      "example": "Quick verification checklist:\n1. Keep the original file unchanged.\n2. Confirm delimiter and header names with a small sample.\n3. Check IDs, dates, quoted fields, and non-English text.\n4. Filter and export a subset.\n5. Reopen that export and compare row counts."
     }
   ],
   "faqs": [

@@ -4,6 +4,7 @@ import { CalendarDays, Wrench, BookOpen, ArrowRight, Sparkles } from 'lucide-rea
 import { PageCard, PageShell } from '@/components/PageShell';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/updates/' },
   title: 'Product Updates - CSVFilters',
   description:
     'See the latest CSVFilters updates, including new tools, validation improvements, editing features, tutorial additions, and SEO improvements.',

@@ -3,6 +3,7 @@ import { Clock, User } from 'lucide-react'
 import TutorialHeader from '@/components/TutorialHeader'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/csv-filtering-tips/' },
   title: 'CSV File Filtering and Screening Tips - CSVFilters Advanced Tutorial',
   description: 'Master advanced CSV file filtering techniques, learn how to quickly screen data, set complex conditions, and improve data analysis efficiency. Suitable for data analysts and business professionals.',
   keywords: 'CSV filtering, data screening, CSV query, data filter, CSV search, conditional filtering, data analysis techniques',

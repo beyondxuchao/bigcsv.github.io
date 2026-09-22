@@ -7,6 +7,7 @@ const CsvMerger = dynamic(() => import('@/components/CsvMerger').then((mod) => m
 });
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tools/csv-merger/' },
   title: 'CSV Merger Tool | Combine Multiple CSV Files Online Free',
   description: 'Free online CSV merger tool to combine multiple CSV files with identical structure into one file. Maintain data integrity, preserve column headers, and process files securely in your browser.',
   keywords: 'csv merger, merge csv files, combine csv data, csv file merger, data consolidation tool, merge multiple files, csv combiner, file merger online',

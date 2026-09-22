@@ -3,6 +3,7 @@ import { FormatConverter } from '@/components/FormatConverter';
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/tools/format-converter/xlsx-to-csv/' },
   title: 'XLSX to CSV Converter | Free Online Excel CSV Conversion Tool',
   description: 'Convert XLSX (Excel) files to CSV format instantly with our free online converter. Support for multiple sheets, formulas, and data types. Fast, secure, and browser-based processing.',
   keywords: 'xlsx to csv converter, excel to csv, xlsx to csv, convert excel to csv, excel converter, xlsx parser, online excel converter',

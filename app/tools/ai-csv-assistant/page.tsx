@@ -1,3 +1,4 @@
+export const metadata = { alternates: { canonical: '/tools/ai-csv-assistant/' } };
 import React from 'react';
 import { AiCsvAssistant } from '@/components/AiCsvAssistant';
 import { ToolPageShell } from '@/components/ToolPageShell';

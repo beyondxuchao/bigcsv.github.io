@@ -4,6 +4,7 @@ import { Clock, User, CheckCircle, AlertTriangle, Lightbulb } from 'lucide-react
 import TutorialHeader from '@/components/TutorialHeader'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/large-csv-files/' },
   title: 'How to Open and Process Large CSV Files - CSVFilters Tutorial',
   description: 'Learn how to efficiently open and process CSV files larger than 100MB, avoiding memory overflow issues. Includes practical tips and best practices for data analysts and developers.',
   keywords: 'large CSV files, CSV file opening, memory optimization, CSV performance, big data processing, CSV file viewer, online CSV tools',

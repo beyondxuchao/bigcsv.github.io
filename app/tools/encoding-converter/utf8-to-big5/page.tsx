@@ -2,6 +2,7 @@ import React from 'react';
 import { EncodingConverter } from '@/app/components/EncodingConverter';
 
 export const metadata = {
+  alternates: { canonical: '/tools/encoding-converter/utf8-to-big5/' },
   title: 'UTF-8 to Big5 Converter | Convert UTF-8 Files to Big5 Encoding Online Free',
   description: 'Free online UTF-8 to Big5 encoding converter. Convert UTF-8 encoded files to Big5 (Chinese Traditional) encoding with automatic detection and secure browser-based processing.',
   keywords: 'utf-8 to big5 converter, utf8 big5 converter, chinese traditional encoding converter, utf-8 big5 conversion, file encoding converter, charset converter',

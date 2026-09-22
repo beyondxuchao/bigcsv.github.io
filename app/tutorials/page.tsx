@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { PageCard, PageShell } from '@/components/PageShell';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/' },
   title: 'CSV and XML Tutorials - CSVFilters Online Tool Guide',
   description:
     'Learn how to work with CSV, XML, JSON, TSV, and spreadsheet conversion tools. Explore format guides, converter walkthroughs, and practical data processing tutorials.',

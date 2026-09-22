@@ -4,6 +4,7 @@ import { Clock, User } from 'lucide-react';
 import TutorialHeader from '@/components/TutorialHeader';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/what-is-xml-format/' },
   title: 'What is XML? Complete Guide to XML Format - CSVFilters',
   description:
     'Learn what XML is, how XML tags and attributes work, common XML structures, where XML is used, and how XML compares with CSV and JSON.',

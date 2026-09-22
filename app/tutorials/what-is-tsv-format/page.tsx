@@ -4,6 +4,7 @@ import { Clock, User, FileText, Download, Eye, Settings } from 'lucide-react'
 import TutorialHeader from '@/components/TutorialHeader'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/what-is-tsv-format/' },
   title: 'What is TSV Format? Complete Guide to Tab-Separated Values Files - CSVFilters',
   description: 'Learn everything about TSV (Tab-Separated Values) format: what it is, how it differs from CSV, how to open TSV files, and best practices for working with tab-delimited data.',
   keywords: 'TSV format, tab-separated values, TSV file, open TSV, tab-delimited, data format, file format guide',

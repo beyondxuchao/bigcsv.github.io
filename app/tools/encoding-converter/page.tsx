@@ -12,6 +12,7 @@ const EncodingConverter = dynamic(
 );
 
 export const metadata = {
+  alternates: { canonical: '/tools/encoding-converter/' },
   title: 'File Encoding Converter | Convert UTF-8, GBK, GB2312, Big5 Online Free',
   description:
     'Free online file encoding converter tool. Convert between UTF-8, GBK, GB2312, Big5, and other character encodings. Automatic encoding detection, secure browser-based processing.',

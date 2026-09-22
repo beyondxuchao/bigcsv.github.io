@@ -2,6 +2,7 @@ import React from 'react';
 import { EncodingConverter } from '@/app/components/EncodingConverter';
 
 export const metadata = {
+  alternates: { canonical: '/tools/encoding-converter/utf8-to-gb2312/' },
   title: 'UTF-8 to GB2312 Converter | Convert UTF-8 Files to GB2312 Encoding Online Free',
   description: 'Free online UTF-8 to GB2312 encoding converter. Convert UTF-8 encoded files to GB2312 (Chinese Simplified Legacy) encoding with automatic detection and secure browser-based processing.',
   keywords: 'utf-8 to gb2312 converter, utf8 gb2312 converter, chinese encoding converter, utf-8 gb2312 conversion, file encoding converter, charset converter',

@@ -4,6 +4,7 @@ import { Clock, User, Split, Grid3X3, FileText, Download } from 'lucide-react'
 import TutorialHeader from '@/components/TutorialHeader'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/csv-splitter-guide/' },
   title: 'CSV Splitter Complete Guide - Split Large CSV Files Efficiently',
   description: 'Learn how to split CSV files using column-based splitting and row-based splitting. Master both one-to-many and large-to-small splitting techniques for efficient data management.',
   keywords: 'CSV splitter, split CSV files, column splitting, row splitting, data management, file processing, CSV tools',

@@ -4,6 +4,7 @@ import { Clock, User, FileText, ArrowRight, CheckCircle, AlertTriangle, Code, Do
 import TutorialHeader from '@/components/TutorialHeader'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/json-to-csv-guide/' },
   title: 'Complete JSON to CSV Conversion Guide - Data Format Conversion Tutorial | CSVFilters',
   description: 'Learn how to convert JSON data to CSV format with detailed tutorials covering manual conversion, online tools, programming implementation, and best practices. Complete guide for beginners and developers.',
   keywords: 'JSON to CSV, data format conversion, JSON CSV converter, data processing, file format conversion, data export, CSV format',

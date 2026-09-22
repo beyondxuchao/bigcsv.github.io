@@ -3,6 +3,7 @@ import { Clock, User } from 'lucide-react'
 import TutorialHeader from '@/components/TutorialHeader'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tutorials/what-is-json-format/' },
   title: 'What is JSON Format? Complete Guide to JavaScript Object Notation - CSVFilters',
   description: 'Learn everything about JSON (JavaScript Object Notation) format: definition, syntax, features, use cases, and best practices for data exchange and storage.',
   keywords: 'JSON format, JavaScript Object Notation, JSON file, data exchange, API, web development, data storage',

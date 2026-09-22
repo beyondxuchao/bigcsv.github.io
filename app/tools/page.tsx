@@ -1,3 +1,4 @@
+export const metadata = { alternates: { canonical: '/tools/' } };
 import React from 'react';
 import { ArrowRight, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -76,14 +77,6 @@ export default function ToolsPage() {
       href: '/tools/csv-validator',
       status: 'available',
     },
-    {
-      id: 'data-validator',
-      title: 'Data Validator',
-      description: 'Validate and check data integrity',
-      icon: 'Soon',
-      href: '/tools/data-validator',
-      status: 'coming-soon',
-    },
   ];
 
   return (
@@ -104,11 +97,6 @@ export default function ToolsPage() {
                   Available
                 </span>
               )}
-              {tool.status === 'coming-soon' && (
-                <span className="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">
-                  Coming Soon
-                </span>
-              )}
             </div>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-2">{tool.title}</h3>
@@ -116,18 +104,14 @@ export default function ToolsPage() {
             <p className="text-gray-600 mb-4 text-sm leading-relaxed">{tool.description}</p>
 
             <div className="flex justify-end">
-              {tool.status === 'available' ? (
+
                 <Link href={tool.href}>
                   <Button className="flex items-center gap-2">
                     Use Tool
                     <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
-              ) : (
-                <Button disabled className="flex items-center gap-2">
-                  Coming Soon
-                </Button>
-              )}
+
             </div>
           </PageCard>
         ))}

@@ -11,6 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://csvfilters.com'),
   title: 'CSVFilters - Online CSV Analysis & Filter Tool',
   description: 'Free online CSV analysis tool for filtering, processing and viewing large CSV files. Advanced CSV editor with real-time filtering, data export, and big file support.',
   keywords: 'csv analysis, csv filter, csv online tool, csv file viewer, csv large file, csv file processor, csv split and merge, csv editor online, big csv file analysis',

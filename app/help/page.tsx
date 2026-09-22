@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
 export const metadata = {
+  alternates: { canonical: '/help/' },
   title: 'CSV File Viewer & Editor Online - Help Guide | CSVFilters',
   description: 'Complete guide for using our online CSV file viewer and editor. Learn advanced CSV filtering, large file processing, data analysis, and export features.',
   keywords: 'csv file viewer, csv editor online, csv help guide, csv filtering tutorial, large csv files, csv data analysis, online csv tool help',

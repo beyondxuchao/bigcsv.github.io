@@ -2,6 +2,7 @@ import React from 'react';
 import { FormatConverter } from '@/components/FormatConverter';
 
 export const metadata = {
+  alternates: { canonical: '/tools/json-to-csv/' },
   title: 'JSON to CSV Converter | Free Online Format Converter Tool',
   description: 'Convert JSON files to CSV format instantly with our free online converter. Support for nested JSON, arrays, and complex data structures. Fast, secure, and browser-based processing.',
   keywords: 'json to csv converter, json csv conversion, format converter, data conversion tool, json parser, csv generator, online converter',

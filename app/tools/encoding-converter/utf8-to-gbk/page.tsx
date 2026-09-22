@@ -9,6 +9,7 @@ const EncodingConverter = dynamic(
 );
 
 export const metadata = {
+  alternates: { canonical: '/tools/encoding-converter/utf8-to-gbk/' },
   title: 'UTF-8 to GBK Converter | Convert UTF-8 Files to GBK Encoding Online Free',
   description: 'Free online UTF-8 to GBK encoding converter. Convert UTF-8 encoded files to GBK (Chinese Simplified) encoding with automatic detection and secure browser-based processing.',
   keywords: 'utf-8 to gbk converter, utf8 gbk converter, chinese encoding converter, utf-8 gbk conversion, file encoding converter, charset converter',

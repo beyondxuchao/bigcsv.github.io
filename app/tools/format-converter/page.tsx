@@ -12,6 +12,7 @@ const FormatConverter = dynamic(
 );
 
 export const metadata = {
+  alternates: { canonical: '/tools/format-converter/' },
   title: 'Format Converter | JSON, CSV, TSV, XML, XLSX Converter Tool',
   description:
     'Convert between JSON, CSV, TSV, XML, and XLSX formats instantly with our free online converter. Support for nested data, arrays, and complex structures. Fast, secure, and browser-based processing.',

@@ -7,6 +7,7 @@ const CsvSplitter = dynamic(() => import('@/components/CsvSplitter'), {
 });
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tools/csv-splitter/' },
   title: 'CSV Splitter Tool | Split Large CSV Files by Column Values',
   description: 'Free online CSV splitter tool to divide large CSV files into multiple smaller files based on column values. Fast processing, secure browser-based splitting, and instant ZIP download.',
   keywords: 'csv splitter, split csv files, divide csv data, csv file splitter, large csv processing, data splitting tool, csv column split, file processing',

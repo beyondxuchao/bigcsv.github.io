@@ -1,5 +1,5 @@
 import React from 'react';
-// import Link from 'next/link';
+import Link from 'next/link';
 // import { FileTextIcon, Github, Twitter, Mail } from 'lucide-react';
 
 interface FooterProps {
@@ -12,7 +12,11 @@ export function Footer({ className = '' }: FooterProps) {
   return (
     <footer className={`bg-gray-900 text-white ${className}`}>
       <div className="max-w-[1600px] mx-auto px-4 py-4">
-        {/* Bottom Bar */}
+        <nav aria-label="Footer" className="flex flex-wrap gap-6 text-sm text-gray-300">
+          <Link href="/about/" className="hover:text-white">About</Link>
+          <Link href="/contact/" className="hover:text-white">Contact</Link>
+          <Link href="/privacy/" className="hover:text-white">Privacy Policy</Link>
+        </nav>
         <div className="border-t border-gray-800 mt-4 pt-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
             © {currentYear} CSVFilters. All rights reserved.
